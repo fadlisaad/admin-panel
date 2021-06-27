@@ -52,7 +52,7 @@ class TransactionController extends AdminController
 
         $grid->actions(function ($actions) {
             $actions->disableDelete();
-            $actions->disableEdit();
+            //$actions->disableEdit();
         });
 
         $grid->disableCreateButton();
