@@ -9,6 +9,8 @@ class Transaction extends Model
 {
     use HasFactory;
 
+    public $timestamps = true;
+
     public function details()
     {
         return $this->hasMany(TransactionDetail::class, 'transaction_id');

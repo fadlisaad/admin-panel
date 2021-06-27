@@ -9,6 +9,8 @@ class Service extends Model
 {
     use HasFactory;
 
+    public $timestamps = true;
+
     public function agency()
     {
         return $this->belongsTo(Agency::class, 'agency_id');

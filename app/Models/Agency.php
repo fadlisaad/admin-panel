@@ -15,6 +15,8 @@ class Agency extends Model
         'email',
     ];
 
+    public $timestamps = true;
+
     public function services()
     {
         return $this->hasMany(Service::class);
