@@ -66,6 +66,7 @@ class AgencyController extends AdminController
         $show->field('code', __('Code'));
         $show->field('name', __('Name'));
         $show->field('email', __('E-mail'));
+        $show->field('url', __('URL'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -107,6 +108,7 @@ class AgencyController extends AdminController
         $form->text('code', __('Code'));
         $form->text('name', __('Name'));
         $form->text('email', __('E-mail'));
+        $form->url('url', __('URL'));
 
         return $form;
     }

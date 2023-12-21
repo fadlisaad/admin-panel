@@ -13,6 +13,7 @@ class Agency extends Model
         'code',
         'name',
         'email',
+        'url',
     ];
 
     public $timestamps = true;
